@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="381.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hqstream.TelaLoginController">
+    <stylesheets>
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="312.0" fitWidth="381.0" layoutX="2.0" layoutY="236.0">
+         <image>
+            <Image url="@imagens/hqStream_triangulo%5D.png" />
+         </image>
+      </ImageView>
+      <JFXTextField id="txtLogin" fx:id="txtLogin" layoutX="67.0" layoutY="76.0" prefHeight="25.0" prefWidth="233.0" promptText="Email ou CPF" />
+      <JFXPasswordField id="txtSenha" fx:id="txtSenha" layoutX="71.0" layoutY="177.0" prefHeight="25.0" prefWidth="226.0" promptText="sua Senha" />
+      <Label fx:id="lblLogin" layoutX="73.0" layoutY="43.0" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="lblSenha" layoutX="72.0" layoutY="141.0" text="Senha">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Hyperlink id="lnkCadastro" fx:id="lnkCadastro" layoutX="134.0" layoutY="299.0" onAction="#acaoCadastro" text="Não sou Cadastrado" />
+      <Button id="btnLogar" fx:id="btnLogar" layoutX="153.0" layoutY="236.0" mnemonicParsing="false" onAction="#botaoLogar" prefHeight="41.0" prefWidth="79.0" text="Logar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

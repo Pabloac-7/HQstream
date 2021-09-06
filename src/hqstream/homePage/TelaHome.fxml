@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-border-color: #1C1C1C; -fx-border-width: 2;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hqstream.homePage.TelaHomeController">
+    <stylesheets>
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="274.0" layoutX="984.0">
+         <image>
+            <Image url="@../imagens/hqStream_logo.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="paneDados" layoutX="185.0" layoutY="100.0" prefHeight="617.0" prefWidth="1083.0" style="-fx-border-color: #D23AFE; -fx-border-insets: 5; -fx-border-width: 5;" />
+      <Pane fx:id="paneBiblioteca" layoutX="185.0" layoutY="100.0" prefHeight="617.0" prefWidth="1083.0" style="-fx-border-color: #00AC52; -fx-border-width: 5; -fx-border-insets: 5;" />
+      <Pane fx:id="panePlanos" layoutX="185.0" layoutY="100.0" prefHeight="617.0" prefWidth="1083.0" style="-fx-border-color: #FCC704; -fx-border-insets: 5; -fx-border-width: 5;" />
+      <Pane fx:id="paneLoja" layoutX="185.0" layoutY="100.0" prefHeight="617.0" prefWidth="1083.0" style="-fx-border-color: #C8AF31; -fx-border-width: 5; -fx-border-insets: 5;" />
+      <AnchorPane prefHeight="726.0" prefWidth="185.0">
+         <children>
+            <ImageView fitHeight="718.0" fitWidth="173.0" layoutX="4.0" layoutY="4.0">
+               <image>
+                  <Image url="@../imagens/cutEsq_color_menu.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnDados" layoutY="27.0" onAction="#acaoDados" prefHeight="109.0" prefWidth="180.0" text=" " />
+            <JFXButton fx:id="btnBiblioteca" layoutY="166.0" onAction="#acaoBiblioteca" prefHeight="100.0" prefWidth="180.0" text=" " />
+            <JFXButton fx:id="btnLoja" layoutY="297.0" onAction="#acaoLoja" prefHeight="100.0" prefWidth="180.0" text=" " />
+            <JFXButton fx:id="btnPlanos" layoutY="436.0" onAction="#acaoPlanos" prefHeight="109.0" prefWidth="180.0" text=" " />
+            <JFXButton fx:id="btnSair" layoutX="-1.0" layoutY="593.0" onAction="#acaoSair" prefHeight="92.0" prefWidth="180.0" text=" " />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
